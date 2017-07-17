@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+.submit{
+	height: 30px;
+	width:100px;
+	background: orange;
+	font:green;
+	font-family:georgia;
+}
+td{
+	height: 30px;
+	width:200px;
+	background: gold;
+	text-align: center;
+}
+input{
+	background: purple;
+	font-size: 20px;
+	font-family: Times;
+	text-align: center;
+}
+table.ca{
+	height:3cm;
+	width: 3cm;
+	position: absolute;
+	left: 10cm;
+	background-color: #CC8822;
+	color: #CC8822;
+}
+	</style>
+	<script>
+	 var order=0;
+	var result=0;
+function ade()
+{
+	var a=document.getElementById('c').value;
+	var b=document.getElementById('d').value;
+	order=parseInt(f1.order1.value);
+	if (order <= b)
+	{
+		result=(b-order);
+		f1.w.value=result;
+		result1=(a*order);
+		f1.z.value=result1;
+	}
+	else
+		{
+		f1.w.value="Order Exceeded";
+		f1.z.value=0;
+		}		
+	adeolaa();
+}
+
+var order22=0;
+var result2=0;
+function sola()
+{
+	var e=document.getElementById('g').value;
+	var f=document.getElementById('h').value;
+	order22=parseInt(f1.order2.value);
+	if (order22 <= f)
+	{
+			result2=(f-order22);
+			f1.u.value=result2;
+			result3=(e*order22);
+			f1.v.value=result3;
+	}
+	else
+		{
+		f1.u.value="Order Exceeded";
+		f1.v.value=0;
+		}	
+	adeolaa();
+}
+
+	
+var order33=0;
+var result4=0;
+function yemi()
+{
+	var i=document.getElementById('k').value;
+	var j=document.getElementById('l').value;
+	order33=parseInt(f1.order3.value);
+	if (order33 <= j)
+	{
+		result4=(j-order33);
+		f1.m.value=result4;
+		result5=(i*order33);
+		f1.n.value=result5;
+	}
+	else
+		{
+		f1.m.value="Order Exceeded";
+		f1.n.value=0;
+		}	
+	adeolaa();
+}
+var order44=0;
+var result6=0;
+function dayo()
+{
+	var q=document.getElementById('o').value;
+	var r=document.getElementById('p').value;
+	order44=parseInt(f1.order4.value);
+	
+	if (order44 <= r)
+	{
+		result6=(r-order44);
+		f1.s.value=result6;
+		result7=(q*order44);
+		f1.t.value=result7;
+	}
+	else
+		{
+		f1.s.value="Order Exceeded";
+		f1.t.value=0;
+		}	
+	adeolaa();
+}
+var order55=0;
+var result8=0;
+function tayo()
+{
+	var val1=document.getElementById('u1').value;
+	var val2=document.getElementById('v1').value;
+	order55=parseInt(f1.order5.value);
+	
+	if (order55 <= val2)
+	{
+		result8=(val2-order55);
+		f1.cc.value=result8;
+		result9=(val1*order55);
+		f1.dd.value=result9;
+	}
+	else
+		{
+		f1.cc.value="Order Exceeded";
+		f1.dd.value=0;
+		}	
+	adeolaa();
+}
+	
+var order66=0;
+var result10=0;
+function banjo()
+{
+	var val3=document.getElementById('u2').value;
+	var val4=document.getElementById('v2').value;
+	order66=parseInt(f1.order6.value);
+	if (order66 <= val4)
+	{
+		result10=(val4-order66);
+		f1.ee.value=result10;
+		result11=(val3*order66);
+		f1.ff.value=result11;
+	}
+	else
+		{
+		f1.ee.value="Order Exceeded";
+		f1.ff.value=0;
+		}	
+	adeolaa();
+}
+function adeolaa()
+{
+	
+	var result1= document.getElementById('z').value;
+	var result3= document.getElementById('v').value;
+	var result5= document.getElementById('n').value;
+	var result7= document.getElementById('t').value;
+	var result9= document.getElementById('dd').value;
+	var result11= document.getElementById('ff').value;
+	if (result1=="")
+		result1=0;
+	if (result3=="")
+		result3=0;
+	if (result5=="")
+		result5=0;
+	if (result7=="")
+		result7=0;
+	if (result9=="")
+		result9=0;
+	if (result11=="")
+		result11=0;
+  result99=parseInt(result1)+parseInt(result3)+parseInt(result5)+parseInt(result7)+parseInt(result9)+parseInt(result11);
+	f1.ez.value=result99;
+}
+function clic()
+{
+  window.open("mycalc.html","_blank","toolbar=yes,scrollbars=no,resizable=no,top=10,left=10,width=370,height=365");
+}
+	</script>
+</head>
+<body bgcolor="#F2E5D2">
+	<table align="center" height="50" width="1000">
+		<tr>
+			<td colspan="2" height="50"  align="center"  style="background:green;font-family:impact;font-size:40px"><font color="white" >JIGIMAN INVENTORY SYSYEM<font></td>
+			</tr>
+		</table>
+</tr>
+<form name="f1">
+<table align="center" height="150cm" border="1" width="1000cm" style="background:violet;font-family:georgia;font-size:20px;" >
+<th><tr><td>Image</td>><td>Name</td><td>Price</td><td>Quantity Available</td><td>Order</td><td>Quantity Remaining</td><td>Total</td></tr></th>
+				<tr>		
+				<td><img src="tele1.jpg" width="100px" height="30px" padding="2"></td>
+				<td>Television</td>
+				<td><input value="12000" readonly="readonly" id="c" type="text" name="tele1"  height="5cm" style="width:50px; height:25px; border-radius:5px"/></td>
+				<td><input value="100" readonly="readonly" type="text" id="d" name="qa1"  height="5cm" style="width:50px; height:25px; border-radius:5px"/></td>
+				<td> <input placeholder="Orders" type="text" name="order1"  onkeyup="ade()" required="required" height="5cm" style="width:150px; height:25px; border-radius:5px"/</td>
+				<td> <input type="text" id="w" readonly="readonly" height="5cm"  style="width:130px; height:25px; border-radius:5px"</td>
+				<td> <input placeholder=" Total" readonly="readonly" type="text" id="z"  height="5cm" style="width:150px; height:25px; border-radius:5px" /</td>
+			</tr>
+			
+			<tr>
+				<td><img src="radio1.jpg" width="100px" height="30px" padding="2"></td>
+				<td>Radio</td>
+				<td><input value="16000" readonly="readonly" type="text" id="g" name="radio"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td><input value="120" readonly="readonly" type="text" name="qa2" id="h"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder="Orders" type="text" name="order2"  onkeyup="sola()" required="required" height="5cm" style="width:150px; height:25px; border-radius:5px"Orders</td>
+				<td> <input type="text" id="u"  readonly="readonly" height="5cm" style="width:130px; height:25px; border-radius:5px"</td>
+				<td> <input placeholder=" Total" type="text" id="v"  height="5cm" readonly="readonly" style="width:150px; height:25px; border-radius:5px"</td>
+
+			</tr>
+
+			<tr>
+				<td><img src="lap1.jpg" width="100px" height="30px" padding="2"></td>
+				<td>Laptops</td>
+				<td><input value="18000" readonly="readonly" type="text" id="k" name="tele"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td><input value="140" readonly="readonly" type="text" id="l" name="laptop"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder="Orders" type="text" name="order3" onkeyup="yemi()" required="required" height="5cm" style="width:150px; height:25px; border-radius:5px"Orders</td>
+				<td> <input type="text" name="qrem" id="m"  readonly="readonly" height="5cm" style="width:130px; height:25px; border-radius:5px"</td>
+				<td> <input placeholder=" Total" type="text" id="n" name="total"  height="5cm" readonly="readonly" style="width:150px; height:25px; border-radius:5px"</td>
+			</tr>
+
+			<tr>
+				<td><img src="charge.jpg" width="100px" height="30px" padding="2"></td>
+				<td>Charger</td>
+				<td><input value="20000" readonly="readonly" type="text" id ="o" name="tele"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td><input value="160" readonly="readonly" type="text" id="p" name="charger"  height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder="Orders" type="text" name="order4"  onkeyup="dayo()" required="required" height="5cm" style="width:150px; height:25px; border-radius:5px"Orders</td>
+				<td> <input  type="text" name="qrem"  readonly="readonly" id="s" height="5cm" style="width:130px; height:25px; border-radius:5px"</td>
+				<td> <input placeholder=" Total" type="text" name="total"  id="t" height="5cm" readonly="readonly" style="width:150px; height:25px; border-radius:5px"</td>
+			</tr>
+
+			<tr>
+				<td><img src="dvd.jpg" width="100px" height="30px" padding="2"></td>
+				<td>Dvd Players</td>
+				<td><input value="22000" readonly="readonly" type="text" name="tele"  id="u1" height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td><input value="180" readonly="readonly" type="text" name="dvd" id="v1" height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder="Orders" type="text" name="order5"  onkeyup="tayo()" required="required" height="5cm" style="width:150px; height:25px; border-radius:5px"Orders</td>
+				<td> <input  type="text" name="qrem"  id="cc" readonly="readonly" height="5cm" style="width:130px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder=" Total" type="text" id="dd" name="total"  height="5cm" readonly="readonly" style="width:150px; height:25px; border-radius:5px"</td>
+			</tr>
+
+			<tr>
+				<td><img src="phone.jpg" width="100px" height="30px" padding="2"></td>
+				<td>phones</td>
+				<td><input value="24000" readonly="readonly" type="text" name="tele"  id="u2" height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td><input value="200" readonly="readonly" type="text"  name="phone"  id="v2" height="5cm" style="width:50px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder="Orders" type="text" name="order6" required="required" onkeyup="banjo()"height="5cm" style="width:150px; height:25px; border-radius:5px"Orders</td>
+				<td> <input  type="text" readonly="readonly" name="qrem" id="ee" height="5cm" style="width:130px; height:25px; border-radius:5px"></td>
+				<td> <input placeholder=" Total" type="text" name="total" id="ff" readonly="readonly" height="5cm" style="width:150px; height:25px; border-radius:5px"></td>
+			</tr>
+/*<tr>
+			<td colspan="5"><input type="button" value=" Use Calculator" onclick="clic()"/> </td>
+			<td colspan="7">Total Amount<input type="text" onclick="adeolaa()" placeholder="Total Balance" align="right" readonly="readonly" name="totbal" id="ez" height="5cm" style="width:150px; height:25px; border-radius:5px"></td> 
+			</tr>
+			</table>
+		</form>
+</div>
+</body>
+</html>
